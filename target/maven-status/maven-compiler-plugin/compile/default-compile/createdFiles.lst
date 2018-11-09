@@ -1,0 +1,8 @@
+com\came\service\TipoprogService.class
+com\came\interfaces\TipoprogDao.class
+com\came\model\ProgDetEntity.class
+com\came\model\ProgramaEntity.class
+com\came\dao\ImplTipoprogDao.class
+com\came\controller\TipoprogC.class
+com\came\dao\persistence.class
+com\came\model\TipoprogEntity.class

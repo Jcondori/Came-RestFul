@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+
+    <persistence-unit name="CamePersistence">
+        <class>com.came.model.ProgramaEntity</class>
+        <class>com.came.model.ProgDetEntity</class>
+        <class>com.came.model.TipoprogEntity</class>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+            <!--<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>-->
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@sql.jcondori.com:1521:XE"/>
+            <property name="javax.persistence.jdbc.user" value="Came"/>
+            <!--<property name="javax.persistence.jdbc.password" value="vallegrande2018"/>-->
+            <property name="javax.persistence.jdbc.password" value="proyecto2018"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
