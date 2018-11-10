@@ -19,7 +19,7 @@ public class ImplTipoprogDao implements ITipoprogDao {
     public List<TipoprogEntity> listarTipoPrograma() {
         List<TipoprogEntity> lista;
         try {
-            Query query = this.em.createQuery("select a from TipoprogEntity a");
+            Query query = this.em.createQuery("select a from TipoprogEntity a ORDER BY a.codtippg asc ");
             lista = query.getResultList();
         } catch (Exception e) {
             throw e;

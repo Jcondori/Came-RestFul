@@ -31,6 +31,7 @@ public class TipoprogC extends Application {
 
     @POST
     public void createTipoProg(TipoprogEntity model) {
+        model.setEsttipopg("A");
         service.agregar(model);
     }
 
