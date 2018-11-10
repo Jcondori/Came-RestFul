@@ -5,7 +5,7 @@ import java.sql.Time;
 import java.util.Objects;
 
 @Entity
-@Table(name = "PROG_DET", schema = "CAME")
+@Table(name = "PROG_DET")
 public class ProgDetEntity {
 
     @Id

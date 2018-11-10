@@ -4,10 +4,13 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "TIPOPROG", schema = "CAME")
+@Table(name = "TIPOPROG")
 public class TipoprogEntity {
 
+
     @Id
+    @GeneratedValue(generator="TipProgSeq")
+    @SequenceGenerator(name="TipProgSeq",sequenceName="TIPOPROG_SEQ", allocationSize=1)
     @Column(name = "CODTIPPG", nullable = false, precision = 0)
     private long codtippg;
 

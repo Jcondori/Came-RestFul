@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 
-    <persistence-unit name="CamePersistence">
-        <class>com.came.model.ProgramaEntity</class>
-        <class>com.came.model.ProgDetEntity</class>
-        <class>com.came.model.TipoprogEntity</class>
+    <persistence-unit name="CamePU" transaction-type="JTA">
+        <!--<jta-data-source>jdbc/Came</jta-data-source>-->
+        <jta-data-source>jdbc/CameLocal</jta-data-source>
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
-            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+            <property name="javax.persistence.schema-generation.database.action" value="none"/>
+            <!--<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>-->
             <!--<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>-->
-            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@sql.jcondori.com:1521:XE"/>
-            <property name="javax.persistence.jdbc.user" value="Came"/>
+            <!--<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@sql.jcondori.com:1521:XE"/>-->
+            <!--<property name="javax.persistence.jdbc.user" value="Came"/>-->
             <!--<property name="javax.persistence.jdbc.password" value="vallegrande2018"/>-->
-            <property name="javax.persistence.jdbc.password" value="proyecto2018"/>
+            <!--<property name="javax.persistence.jdbc.password" value="proyecto2018"/>-->
         </properties>
     </persistence-unit>
 
